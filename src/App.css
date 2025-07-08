@@ -1,0 +1,118 @@
+/* 🌑 Base Style */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: radial-gradient(circle at top left, #1a1b20, #0f1014);
+  color: #f5f5ff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}
+
+/* 🧠 Panels & Sections */
+form,
+.results-section {
+  background-color: #1f1f27;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 16px #ff00cc40;
+  border: 2px solid #ff00cc33;
+  animation: fadeIn 0.5s ease;
+}
+
+/* 🌟 Headings */
+h1, h2 {
+  color: #ffccff;
+  font-weight: 600;
+  text-shadow: 0 0 6px #ff00cc;
+}
+
+/* 📋 Inputs & Labels */
+label {
+  display: block;
+  margin: 1.2rem 0 0.4rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b2c34;
+  color: #fff;
+  box-shadow: inset 0 0 6px #8f00ff22;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 6px #ff00cc88;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* 🔮 Buttons */
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff00cc, #8000ff);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00cc88;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px #ff00ccaa;
+}
+
+/* ⚠️ Error Messages */
+.error {
+  color: #ff4a7d;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* 💬 Instructions */
+.instructions {
+  background: #2b2c34;
+  border-left: 4px solid #8000ff;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-style: italic;
+  box-shadow: inset 0 0 6px #8f00ff55;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
